@@ -11,14 +11,101 @@ if ! command -v brew > /dev/null; then
   printf "export PATH=\"/usr/local/bin:$PATH\"\n" >> $HOME/.bash_profile
 fi
 
+# asciinema
+# brew install asciinema
+
+# chruby
+# brew install chruby
+
+# cloc
+# brew install cloc
+
+# CTags
+# brew install ctags
+
+# direnv
+# brew install direnv
+
+# ExifTool
+# brew install exiftool
+
+# Elasticsearch
+# brew install elasticsearch
+
+# Elm
+# brew install elm
+
+# Gifsicle
+# brew install gifsicle
+
+# ImageMagick
+# brew install imagemagick
+
+# Ioping
+# brew install ioping
+
+# JSON CLI Parser
+# brew install jq
+
+# GPG
+# brew install gpg
+
+# GPG Agent
+# brew install gpg-agent
+
+# Memcached
+# brew install memcached
+
+# Mercurial
+# brew install hg
+
+# Tag
+# brew install tag
+
+# Terminal Notifier
+# brew install terminal-notifier
+
+# Terraform
+# brew install terraform
+
+# Watchman
+# brew install watchman
+
+# Yank
+# brew install yank
+
+# Yarn
+# brew install yarn
+
+# YouTube Download
+# brew install youtube-dl
+
+# Z
+# brew install z
+
+# Rust
+# brew install rust
+
+# Tig
+# brew install tig
+
+# Redis
+# brew install redis
+
+# Overmind
+# brew install overmind
+
+# Namebench
+# brew install namebench
+
+# Network Grep
+# brew install ngrep
+
 # Readline
 brew install readline
 
 # OpenSSL
 brew install openssl
-
-# asciinema
-brew install asciinema
 
 # Bash
 brew install bash
@@ -26,32 +113,11 @@ brew install bash
 # Bash Completion
 brew install bash-completion
 
-# chruby
-brew install chruby
-
-# cloc
-brew install cloc
-
 # Colorized Cat
 brew install ccat
 
-# CTags
-brew install ctags
-
 # Diff So Fancy
 brew install diff-so-fancy
-
-# direnv
-brew install direnv
-
-# ExifTool
-brew install exiftool
-
-# Elasticsearch
-brew install elasticsearch
-
-# Elm
-brew install elm
 
 # FFmpeg
 brew install ffmpeg
@@ -59,23 +125,14 @@ brew install ffmpeg
 # FLAC
 brew install flac
 
-# FZF
+# FZF - fuzzy finder
 brew install fzf
 
 # GDBM
 brew install gdbm
 
-# Gifsicle
-brew install gifsicle
-
 # Git
 brew install git
-
-# GPG
-brew install gpg
-
-# GPG Agent
-brew install gpg-agent
 
 # Graphviz
 brew install graphviz
@@ -86,47 +143,26 @@ brew install hr
 # Htop
 brew install htop
 
-# HTTPie
+# HTTPie - simple http client offering the `http` command
 brew install httpie
 
-# ImageMagick
-brew install imagemagick
-
-# Ioping
-brew install ioping
-
-# JSON CLI Parser
-brew install jq
-
-# libffi
+# libffi - foreign function interace library
 brew install libffi
 
-# libyaml
+# libyaml - C library for emitting YAML
 brew install libyaml
 
-# lnav
+# lnav - log file navigator
 brew install lnav
 
-# Lynis
+# Lynis - security auditing
 brew install lynis
 
 # Mac App Store CLI
 brew install mas
 
-# Memcached
-brew install memcached
-
-# Mercurial
-brew install hg
-
 # Mosh
 brew install mobile-shell
-
-# Namebench
-brew install namebench
-
-# Network Grep
-brew install ngrep
 
 # Nginx
 brew install nginx
@@ -134,19 +170,19 @@ brew install nginx
 # Node
 brew install node
 
-# Overmind
-brew install overmind
+# Pandoc
+brew install pandoc
 
 # Parallel
 brew install parallel
 
-# Peco
+# Peco - interactive command line filtering tool
 brew install peco
 
-# pgcli
+# pgcli - postgres cli
 brew install pgcli
 
-# Pigz
+# Pigz - parallel gzip
 brew install pigz
 
 # Pipe Viewer
@@ -158,32 +194,14 @@ brew install postgresql
 # Ranger
 brew install ranger
 
-# Redis
-brew install redis
-
 # Ruby Install
 brew install ruby-install
 
-# Rust
-brew install rust
-
-# ShellCheck
+# ShellCheck - a code analyzer for shell scripts
 brew install shellcheck
 
-# Tag
-brew install tag
-
-# Terminal Notifier
-brew install terminal-notifier
-
-# Terraform
-brew install terraform
-
-# The Silver Searcher
+# The Silver Searcher - code searching with `ag`
 brew install the_silver_searcher
-
-# Tig
-brew install tig
 
 # tmux
 brew install tmux
@@ -195,17 +213,24 @@ brew install tree
 # Vim
 brew install vim
 
-# Watchman
-brew install watchman
+# Sox
+brew install sox
 
-# Yank
-brew install yank
+# sqlite
+brew install sqlite
 
-# Yarn
-brew install yarn
+# hdf5
+brew install hdf5
 
-# YouTube Download
-brew install youtube-dl
+# install r
+brew tap homebrew/science
+brew install r
 
-# Z
-brew install z
+# macvim
+brew install macvim
+
+# wget
+brew install wget
+
+# trash
+brew install trash

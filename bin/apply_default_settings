@@ -10,8 +10,8 @@ sudo nvram SystemAudioVolume=" "
 printf "System - Reveal IP address, hostname, OS version, etc. when clicking the login window clock\n"
 sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo HostName
 
-printf "System - Disable automatic termination of inactive apps\n"
-defaults write NSGlobalDomain NSDisableAutomaticTermination -bool true
+# printf "System - Disable automatic termination of inactive apps\n"
+# defaults write NSGlobalDomain NSDisableAutomaticTermination -bool true
 
 printf "System - Expand save panel by default\n"
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
@@ -22,8 +22,8 @@ defaults write com.apple.LaunchServices LSQuarantine -bool false
 printf "System - Increase window resize speed for Cocoa applications\n"
 defaults write NSGlobalDomain NSWindowResizeTime -float 0.001
 
-printf "System - Disable window resume system-wide\n"
-defaults write NSGlobalDomain NSQuitAlwaysKeepsWindows -bool false
+# printf "System - Disable window resume system-wide\n"
+# defaults write NSGlobalDomain NSQuitAlwaysKeepsWindows -bool false
 
 printf "System - Disable auto-correct\n"
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
@@ -34,18 +34,14 @@ defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
 printf "System - Disable smart dashes (not useful when writing code)\n"
 defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
 
-printf "System - Require password immediately after sleep or screen saver begins\n"
-defaults write com.apple.screensaver askForPassword -int 1
-defaults write com.apple.screensaver askForPasswordDelay -int 0
-
 printf "System - Avoid creating .DS_Store files on network volumes\n"
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 
 printf "System - Automatically restart if system freezes\n"
 systemsetup -setrestartfreeze on
 
-printf "System - Disable software updates\n"
-sudo softwareupdate --schedule off
+# printf "System - Disable software updates\n"
+# sudo softwareupdate --schedule off
 
 printf "Keyboard - Automatically illuminate built-in MacBook keyboard in low light\n"
 defaults write com.apple.BezelServices kDim -bool true
@@ -62,16 +58,16 @@ defaults write NSGlobalDomain KeyRepeat -int 0
 printf "Keyboard - Disable press-and-hold for keys in favor of key repeat\n"
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 
-printf "Trackpad - Map bottom right corner to right-click\n"
-defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadCornerSecondaryClick -int 2
-defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadRightClick -bool true
-defaults -currentHost write NSGlobalDomain com.apple.trackpad.trackpadCornerClickBehavior -int 1
-defaults -currentHost write NSGlobalDomain com.apple.trackpad.enableSecondaryClick -bool true
+# printf "Trackpad - Map bottom right corner to right-click\n"
+# defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadCornerSecondaryClick -int 2
+# defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadRightClick -bool true
+# defaults -currentHost write NSGlobalDomain com.apple.trackpad.trackpadCornerClickBehavior -int 1
+# defaults -currentHost write NSGlobalDomain com.apple.trackpad.enableSecondaryClick -bool true
 
-printf "Trackpad - Enable tap to click for current user and the login screen\n"
-defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
-defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
-defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+# printf "Trackpad - Enable tap to click for current user and the login screen\n"
+# defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
+# defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+# defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 
 printf "Trackpad - Use CONTROL (^) with scroll to zoom\n"
 defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
@@ -116,8 +112,8 @@ defaults write com.apple.finder AppleShowAllFiles -bool true
 printf "Finder - Show filename extensions\n"
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 
-printf "Finder - Disable the warning when changing a file extension\n"
-defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
+# printf "Finder - Disable the warning when changing a file extension\n"
+# defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 
 printf "Finder - Show path bar\n"
 defaults write com.apple.finder ShowPathbar -bool true
@@ -134,8 +130,8 @@ defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
 printf "Finder - Allow quitting via COMMAND+Q -- Doing so will also hide desktop icons\n"
 defaults write com.apple.finder QuitMenuItem -bool true
 
-printf "Finder - Disable the warning before emptying the Trash\n"
-defaults write com.apple.finder WarnOnEmptyTrash -bool false
+# printf "Finder - Disable the warning before emptying the Trash\n"
+# defaults write com.apple.finder WarnOnEmptyTrash -bool false
 
 printf "Finder - Allow text selection in Quick Look\n"
 defaults write com.apple.finder QLEnableTextSelection -bool true
@@ -187,8 +183,8 @@ defaults write com.apple.addressbook ABShowDebugMenu -bool true
 printf "iCal - Enable debug menu\n"
 defaults write com.apple.iCal IncludeDebugMenu -bool true
 
-printf "TextEdit - Use plain text mode for new documents\n"
-defaults write com.apple.TextEdit RichText -int 0
+# printf "TextEdit - Use plain text mode for new documents\n"
+# defaults write com.apple.TextEdit RichText -int 0
 
 printf "TextEdit - Open and save files as UTF-8 encoding\n"
 defaults write com.apple.TextEdit PlainTextEncoding -int 4
@@ -198,8 +194,8 @@ printf "Disk Utility - Enable debug menu\n"
 defaults write com.apple.DiskUtility DUDebugMenuEnabled -bool true
 defaults write com.apple.DiskUtility advanced-image-options -bool true
 
-printf "Time Machine - Prevent prompting to use new hard drives as backup volume\n"
-defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
+# printf "Time Machine - Prevent prompting to use new hard drives as backup volume\n"
+# defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
 
 printf "Printer - Expand print panel by default\n"
 defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
@@ -215,144 +211,3 @@ defaults write com.apple.appstore WebKitDeveloperExtras -bool true
 
 printf "App Store - Enable Debug Menu in the Mac App Store\n"
 defaults write com.apple.appstore ShowDebugMenu -bool true
-
-printf "CCMenu - Add open source projects\n"
-defaults write net.sourceforge.cruisecontrol.CCMenu Projects '
-(
-  {
-    projectName = "bkuhlmann/alfred";
-    serverUrl = "https://circleci.com/gh/bkuhlmann/alfred.cc.xml";
-  },
-  {
-    projectName = "bkuhlmann/archiver";
-    serverUrl = "https://circleci.com/gh/bkuhlmann/archiver.cc.xml";
-  },
-  {
-    projectName = "bkuhlmann/auther";
-    serverUrl = "https://circleci.com/gh/bkuhlmann/auther.cc.xml";
-  },
-  {
-    projectName = "bkuhlmann/bashsmith";
-    serverUrl = "https://circleci.com/gh/bkuhlmann/bashsmith.cc.xml";
-  },
-  {
-    projectName = "bkuhlmann/code_quality";
-    serverUrl = "https://circleci.com/gh/bkuhlmann/code_quality.cc.xml";
-  },
-  {
-    projectName = "bkuhlmann/dotfiles";
-    serverUrl = "https://circleci.com/gh/bkuhlmann/dotfiles.cc.xml";
-  },
-  {
-    projectName = "bkuhlmann/flacsmith";
-    serverUrl = "https://circleci.com/gh/bkuhlmann/flacsmith.cc.xml";
-  },
-  {
-    projectName = "bkuhlmann/gemsmith";
-    serverUrl = "https://circleci.com/gh/bkuhlmann/gemsmith.cc.xml";
-  },
-  {
-    projectName = "bkuhlmann/git-cop";
-    serverUrl = "https://circleci.com/gh/bkuhlmann/git-cop.cc.xml";
-  },
-  {
-    projectName = "bkuhlmann/lineage";
-    serverUrl = "https://circleci.com/gh/bkuhlmann/lineage.cc.xml";
-  },
-  {
-    projectName = "bkuhlmann/linguist";
-    serverUrl = "https://circleci.com/gh/bkuhlmann/linguist.cc.xml";
-  },
-  {
-    projectName = "bkuhlmann/mac_os";
-    serverUrl = "https://circleci.com/gh/bkuhlmann/mac_os.cc.xml";
-  },
-  {
-    projectName = "bkuhlmann/mac_os-config";
-    serverUrl = "https://circleci.com/gh/bkuhlmann/mac_os-config.cc.xml";
-  },
-  {
-    projectName = "bkuhlmann/milestoner";
-    serverUrl = "https://circleci.com/gh/bkuhlmann/milestoner.cc.xml";
-  },
-  {
-    projectName = "bkuhlmann/navigator";
-    serverUrl = "https://circleci.com/gh/bkuhlmann/navigator.cc.xml";
-  },
-  {
-    projectName = "bkuhlmann/pennyworth";
-    serverUrl = "https://circleci.com/gh/bkuhlmann/pennyworth.cc.xml";
-  },
-  {
-    projectName = "bkuhlmann/pragmater";
-    serverUrl = "https://circleci.com/gh/bkuhlmann/pragmater.cc.xml";
-  },
-  {
-    projectName = "bkuhlmann/prawn_plus";
-    serverUrl = "https://circleci.com/gh/bkuhlmann/prawn_plus.cc.xml";
-  },
-  {
-    projectName = "bkuhlmann/rails_dummy_template";
-    serverUrl = "https://circleci.com/gh/bkuhlmann/rails_dummy_template.cc.xml";
-  },
-  {
-    projectName = "bkuhlmann/rails_slim_template";
-    serverUrl = "https://circleci.com/gh/bkuhlmann/rails_slim_template.cc.xml";
-  },
-  {
-    projectName = "bkuhlmann/refinements";
-    serverUrl = "https://circleci.com/gh/bkuhlmann/refinements.cc.xml";
-  },
-  {
-    projectName = "bkuhlmann/resourcer";
-    serverUrl = "https://circleci.com/gh/bkuhlmann/resourcer.cc.xml";
-  },
-  {
-    projectName = "bkuhlmann/ruby_setup";
-    serverUrl = "https://circleci.com/gh/bkuhlmann/ruby_setup.cc.xml";
-  },
-  {
-    projectName = "bkuhlmann/runcom";
-    serverUrl = "https://circleci.com/gh/bkuhlmann/runcom.cc.xml";
-  },
-  {
-    projectName = "bkuhlmann/sessioner";
-    serverUrl = "https://circleci.com/gh/bkuhlmann/sessioner.cc.xml";
-  },
-  {
-    projectName = "bkuhlmann/sorter";
-    serverUrl = "https://circleci.com/gh/bkuhlmann/sorter.cc.xml";
-  },
-  {
-    projectName = "bkuhlmann/style_guides";
-    serverUrl = "https://circleci.com/gh/bkuhlmann/style_guides.cc.xml";
-  },
-  {
-    projectName = "bkuhlmann/sublime_text_kit";
-    serverUrl = "https://circleci.com/gh/bkuhlmann/sublime_text_kit.cc.xml";
-  },
-  {
-    projectName = "bkuhlmann/sublime_text_setup";
-    serverUrl = "https://circleci.com/gh/bkuhlmann/sublime_text_setup.cc.xml";
-  },
-  {
-    projectName = "bkuhlmann/tocer";
-    serverUrl = "https://circleci.com/gh/bkuhlmann/tocer.cc.xml";
-  },
-  {
-    projectName = "bkuhlmann/tokener";
-    serverUrl = "https://circleci.com/gh/bkuhlmann/tokener.cc.xml";
-  },
-  {
-    projectName = "bkuhlmann/ubuntu";
-    serverUrl = "https://circleci.com/gh/bkuhlmann/ubuntu.cc.xml";
-  },
-  {
-    projectName = "bkuhlmann/versionaire";
-    serverUrl = "https://circleci.com/gh/bkuhlmann/versionaire.cc.xml";
-  },
-  {
-    projectName = "bkuhlmann/yarn_setup";
-    serverUrl = "https://circleci.com/gh/bkuhlmann/yarn_setup.cc.xml";
-  }
-)'

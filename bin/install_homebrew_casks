@@ -3,48 +3,70 @@
 # DESCRIPTION
 # Installs Homebrew Casks.
 
-brew cask install alfred
-brew cask install appcleaner
-brew cask install bartender
-brew cask install carbon-copy-cloner
-brew cask install cardhop
-brew cask install clipgrab
-brew cask install dash
-brew cask install dnscrypt
-brew cask install doxie
-brew cask install dropbox
-brew cask install encryptme
-brew cask install firefox
-brew cask install google-chrome
-brew cask install handbrake
-brew cask install handbrakebatch
-brew cask install hazel
-brew cask install imageoptim
-brew cask install istat-menus
-brew cask install iterm2
-brew cask install kap
-brew cask install keybase
-brew cask install ksdiff
-brew cask install marp
-brew cask install micro-snitch
-brew cask install muzzle
-brew cask install ngrok
-brew cask install numi
-brew cask install openoffice
-brew cask install opera
-brew cask install path-finder
-brew cask install paw
-brew cask install pgadmin4
-brew cask install psequel
-brew cask install qlstephen
-brew cask install rescuetime
-brew cask install signal
-brew cask install sonos
-brew cask install sublime-text
-brew cask install torbrowser
-brew cask install trailer
-brew cask install transmit
-brew cask install viscosity
-brew cask install visual-studio-code
-brew cask install vlc
-brew cask install zoom
+# brew cask install carbon-copy-cloner
+# brew cask install cardhop
+# brew cask install clipgrab
+# brew cask install dash
+# brew cask install dnscrypt
+# brew cask install doxie
+# brew cask install encryptme
+# brew cask install handbrake
+# brew cask install handbrakebatch
+# brew cask install hazel
+# brew cask install imageoptim
+# brew cask install kap
+# brew cask install keybase
+# brew cask install ksdiff
+# brew cask install marp
+# brew cask install numi
+# brew cask install openoffice
+# brew cask install opera
+# brew cask install paw
+# brew cask install rescuetime
+# brew cask install signal
+# brew cask install sonos
+# brew cask install sublime-text
+# brew cask install trailer
+# brew cask install transmit
+# brew cask install viscosity
+# brew cask install visual-studio-code
+# brew cask install zoom
+# brew cask install micro-snitch
+brew cask install --appdir=/Applications qlstephen
+brew cask install --appdir=/Applications istat-menus
+brew cask install --appdir=/Applications iterm2
+brew cask install --appdir=/Applications muzzle
+brew cask install --appdir=/Applications ngrok
+brew cask install --appdir=/Applications path-finder
+brew cask install --appdir=/Applications pgadmin4
+brew cask install --appdir=/Applications psequel
+brew cask install --appdir=/Applications torbrowser
+brew cask install --appdir=/Applications vlc
+brew cask install --appdir=/Applications sequel-pro
+brew cask install --appdir=/Applications flux
+brew cask install --appdir=/Applications spectacle
+brew cask install --appdir=/Applications spotify
+brew cask install --appdir=/Applications mailmate
+brew cask install --appdir=/Applications crashplan
+brew cask install --appdir=/Applications xquartz
+brew cask install --appdir=/Applications firefox
+brew cask install --appdir=/Applications google-chrome
+brew cask install --appdir=/Applications dropbox
+brew cask install --appdir=/Applications alfred
+brew cask install --appdir=/Applications appcleaner
+brew cask install --appdir=/Applications bartender
+brew cask install --appdir=/Applications rstudio
+brew cask install --appdir=/Applications java
+brew cask install --appdir=/Applications mamp
+brew cask install --appdir=/Applications skype
+brew cask install --appdir=/Applications little-snitch
+brew cask install --appdir=/Applications postgres
+brew cask install --appdir=/Applications mactex
+brew cask install --appdir=/Applications texshop
+brew cask install --appdir=/Applications splitshow
+brew cask install --appdir=/Applications the-unarchiver
+brew cask install --appdir=/Applications rstudio
+brew cask install --appdir=/Applications skim
+brew cask install --appdir=/Applications soundflower
+brew cask install --appdir=/Applications audacity
+brew cask install --appdir=/Applications transmission

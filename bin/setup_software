@@ -32,12 +32,12 @@ rm -rf ruby_setup
 install_git_project "https://github.com/bkuhlmann/yarn_setup.git" $REPO_YARN_SETUP "yarn_setup" "bin/run i"
 
 # Sublime Text Setup
-if [ ! -e "/usr/bin/sublime" ]; then
-  sudo ln -sv "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/sublime
-fi
-install_git_project "https://github.com/bkuhlmann/sublime_text_setup.git" $REPO_SUBLIME_TEXT_SETUP "sublime_text_setup" "bin/run i"
+# if [ ! -e "/usr/bin/sublime" ]; then
+#   sudo ln -sv "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/sublime
+# fi
+# install_git_project "https://github.com/bkuhlmann/sublime_text_setup.git" $REPO_SUBLIME_TEXT_SETUP "sublime_text_setup" "bin/run i"
 
 # Dotfiles
 rm -f $HOME/.bash_profile
-install_git_project "https://github.com/bkuhlmann/dotfiles.git" $REPO_DOTFILES "dotfiles" "bin/run i"
+install_git_project "https://github.com/ddbourgin/dotfiles.git" $REPO_DOTFILES "dotfiles" "bin/run i"
 source $HOME/.bashrc
