@@ -1,37 +1,8 @@
 #! /usr/bin/env bash
 
-# DESCRIPTION
 # Installs Homebrew Casks.
 
-# brew cask install carbon-copy-cloner
-# brew cask install cardhop
-# brew cask install clipgrab
-# brew cask install dash
-# brew cask install dnscrypt
-# brew cask install doxie
-# brew cask install encryptme
-# brew cask install handbrake
-# brew cask install handbrakebatch
-# brew cask install hazel
-# brew cask install imageoptim
-# brew cask install kap
-# brew cask install keybase
-# brew cask install ksdiff
-# brew cask install marp
-# brew cask install numi
-# brew cask install openoffice
-# brew cask install opera
-# brew cask install paw
-# brew cask install rescuetime
-# brew cask install signal
-# brew cask install sonos
-# brew cask install sublime-text
-# brew cask install trailer
-# brew cask install transmit
-# brew cask install viscosity
-# brew cask install visual-studio-code
-# brew cask install zoom
-# brew cask install micro-snitch
+brew cask install --appdir=/Applications audio-hijack
 brew cask install --appdir=/Applications qlstephen
 brew cask install --appdir=/Applications istat-menus
 brew cask install --appdir=/Applications iterm2

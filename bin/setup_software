@@ -1,6 +1,5 @@
 #! /usr/bin/env bash
 
-# DESCRIPTION
 # Sets up and launches (if necessary) installed software.
 
 # Bash
@@ -19,7 +18,4 @@ chsh -s /usr/local/bin/bash
 rm -f $HOME/.bash_profile
 git clone https://github.com/ddbourgin/dotfiles.git $HOME/.dotfiles
 cd $HOME/.dotfiles
-./install full_install
- 
-# install_git_project "https://github.com/ddbourgin/dotfiles.git ~/.dotfiles" $REPO_DOTFILES "$HOME/.dotfiles" "./install full_install"
-# source $HOME/.bashrc
+./install minimal_install

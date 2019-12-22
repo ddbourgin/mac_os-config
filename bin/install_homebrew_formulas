@@ -1,125 +1,30 @@
 #! /usr/bin/env bash
 
-# DESCRIPTION
 # Installs Homebrew software.
 
-# EXECUTION
-# Homebrew
 if ! command -v brew > /dev/null; then
   ruby -e "$(curl --location --fail --silent --show-error https://raw.githubusercontent.com/Homebrew/install/master/install)"
   export PATH="/usr/local/bin:$PATH"
   printf "export PATH=\"/usr/local/bin:$PATH\"\n" >> $HOME/.bash_profile
 fi
 
-# asciinema
-# brew install asciinema
+# ctags
+brew install ctags
 
-# chruby
-# brew install chruby
-
-# cloc
-# brew install cloc
-
-# CTags
-# brew install ctags
-
-# direnv
-# brew install direnv
-
-# ExifTool
-# brew install exiftool
-
-# Elasticsearch
-# brew install elasticsearch
-
-# Elm
-# brew install elm
-
-# Gifsicle
-# brew install gifsicle
-
-# ImageMagick
-# brew install imagemagick
-
-# Ioping
-# brew install ioping
-
-# JSON CLI Parser
-# brew install jq
-
-# GPG
-# brew install gpg
-
-# GPG Agent
-# brew install gpg-agent
-
-# Memcached
-# brew install memcached
-
-# Mercurial
-# brew install hg
-
-# Tag
-# brew install tag
-
-# Terminal Notifier
-# brew install terminal-notifier
-
-# Terraform
-# brew install terraform
-
-# Watchman
-# brew install watchman
-
-# Yank
-# brew install yank
-
-# Yarn
-# brew install yarn
-
-# YouTube Download
-# brew install youtube-dl
-
-# Z
-# brew install z
-
-# Rust
-# brew install rust
-
-# Tig
-# brew install tig
-
-# Redis
-# brew install redis
-
-# Overmind
-# brew install overmind
-
-# Namebench
-# brew install namebench
-
-# Network Grep
-# brew install ngrep
-
-# Readline
+# readline
 brew install readline
 
-# OpenSSL
+# openssl
 brew install openssl
 
 # Bash
 brew install bash
-
-# Bash Completion
 brew install bash-completion
 
-# Colorized Cat
-brew install ccat
-
-# Diff So Fancy
+# diff so fancy
 brew install diff-so-fancy
 
-# FFmpeg
+# ffmpeg
 brew install ffmpeg
 
 # FLAC
@@ -128,23 +33,14 @@ brew install flac
 # FZF - fuzzy finder
 brew install fzf
 
-# GDBM
-brew install gdbm
-
-# Git
+# git
 brew install git
 
-# Graphviz
+# graphviz
 brew install graphviz
 
-# hr
-brew install hr
-
-# Htop
+# htop
 brew install htop
-
-# HTTPie - simple http client offering the `http` command
-brew install httpie
 
 # libffi - foreign function interace library
 brew install libffi
@@ -155,65 +51,45 @@ brew install libyaml
 # lnav - log file navigator
 brew install lnav
 
-# Lynis - security auditing
-brew install lynis
-
-# Mac App Store CLI
-brew install mas
-
-# Mosh
-brew install mobile-shell
+# mosh
+brew install mosh
 
 # Nginx
 brew install nginx
 
-# Node
+# nodejs
 brew install node
 
-# Pandoc
+# pandoc
 brew install pandoc
 
-# Parallel
+# parallel
 brew install parallel
-
-# Peco - interactive command line filtering tool
-brew install peco
 
 # pgcli - postgres cli
 brew install pgcli
 
-# Pigz - parallel gzip
-brew install pigz
-
-# Pipe Viewer
-brew install pv
-
-# PostgreSQL
 brew install postgresql
 
-# Ranger
-brew install ranger
-
-# Ruby Install
+# ruby 
 brew install ruby-install
 
 # ShellCheck - a code analyzer for shell scripts
 brew install shellcheck
 
-# The Silver Searcher - code searching with `ag`
+# silver searcher - code searching with `ag`
 brew install the_silver_searcher
 
 # tmux
 brew install tmux
-brew install reattach-to-user-namespace
 
-# Tree
+# tree
 brew install tree
 
-# Vim
+# vim
 brew install vim
 
-# Sox
+# sox
 brew install sox
 
 # sqlite
@@ -222,7 +98,7 @@ brew install sqlite
 # hdf5
 brew install hdf5
 
-# install r
+# r
 brew tap homebrew/science
 brew install r
 

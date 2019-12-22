@@ -1,10 +1,7 @@
 #! /usr/bin/env bash
 
-# DESCRIPTION
 # Installs App Store software.
 
-# EXECUTION
-# Homebrew
 if ! command -v mas > /dev/null; then
   printf "ERROR: Mac App Store CLI (mas) can't be found.\n"
   printf "       Please ensure Homebrew and mas (i.e. brew install mas) have been installed first."
@@ -23,11 +20,8 @@ mas install 417375580
 # PopClip
 mas install 445189367
 
-# JoyStickMapper
-mas install 528183797
-
-# Keynote
-mas install 409183694
-
 # Slack
 mas install 803453959
+
+# WiFi Explorer
+mas install 494803304

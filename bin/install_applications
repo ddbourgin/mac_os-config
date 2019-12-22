@@ -1,10 +1,6 @@
 #! /usr/bin/env bash
 
-# DESCRIPTION
 # Installs applications.
 
 # EXECUTION
-
-# CheatSheet
-install_zip_app "$CHEATSHEET_APP_URL" "$CHEATSHEET_APP_NAME"
-
+install_program "$GIT_FILTER_REPO_APP_URL" "$GIT_FILTER_REPO_APP_NAME"
